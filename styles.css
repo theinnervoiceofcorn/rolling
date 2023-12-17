@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 0 3.3vw 2.4vw;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+section {
+    margin-bottom: 6.25vw;
+}
+
+h1 {
+    font-size: 1.66vw;
+    font-weight: 600;
+    margin-right: 7.2vw;
+}
+
+h2 {
+    font-size: 1.94vw;
+    font-weight: 500;
+    line-height: 128%;
+}
+
+h3 {
+    font-size: 1.6vw;
+    line-height: 100%;
+}
+
+h4 {
+    font-size: 1.38vw;
+    line-height: 140%;
+}
+
+h5 {
+    font-size: 1.25vw;
+    font-weight: 400;
+    line-height: 88%;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+/* --- HEADER --- */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6.6vw;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    gap: 0.83vw;
+    color: #8E8E93;
+    box-shadow: 0 0.83vw 1.66vw 0 rgba(5, 16, 55, 0.04);
+    width: 29.375vw;
+    padding: 1.1vw 1.6vw;
+    border: 0.07vw solid #E5E5EA;
+    border-radius: 4.16vw;
+    margin-right: 8.4vw;
+    font-weight: 500;
+}
+
+.searchBar img {
+    width: 1.66vw;
+    height: 1.66vw;
+}
+
+.headerMenu {
+    display: flex;
+    gap: 0.83vw;
+    margin-right: 2.2vw;
+}
+
+.headerMenu p {
+    padding: 0.7vw;
+    font-weight: 500;
+}
+
+.lightningFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0.7vw 1.4vw rgba(5, 16, 55, 0.10));
+    width: 2.77vw;
+    height: 2.77vw;
+    border: 0.03vw solid #E5E5E5;
+    border-radius: 50%;
+    margin-right: 2.5vw;
+}
+
+.lightningFrame img {
+    width: 1.38vw;
+    height: 1.38vw;
+}
+
+header button {
+    background: rgba(0, 122, 255, 0.12);
+    color: #007AFF;
+    width: 10.5vw;
+    padding: 1.1vw;
+    border: 0.03vw solid rgba(0, 122, 255, 0.12);
+    border-radius: 2.3vw;
+    font-weight: 500;
+}
+
+/* --- MAIN-AUCTION --- */
+
+.mainAuction {
+    display: flex;
+    gap: 1.6vw;
+    padding-top: 2.2vw;
+}
+
+.mainAuctionPic {
+    width: 62vw;
+    height: 34vw;
+    background-image: url(images/auction-pic.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.83vw 0.83vw 0 0;
+}
+
+.mainAuctionInfo {
+    box-shadow: 0 1.25vw 2.36vw 0 rgba(5, 16, 55, 0.15);
+    padding: 3.3vw 2.5vw;
+    max-height: 34vw;
+    border-radius: 0.83vw;
+}
+
+.mainAuctionInfoTop {
+    display: flex;
+    flex-direction: column;
+    gap: 0.83vw;
+    margin-bottom: 3.2vw;
+}
+
+.mainAuctionInfoTop div {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.mainAuctionInfoTop div img {
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+}
+
+.mainAuctionInfoMiddle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vw;
+}
+
+.currentBid,
+.auctionEnd {
+    display: flex;
+    flex-direction: column;
+    gap: 0.83vw;
+}
+
+.line {
+    width: 0.07vw;
+    height: 5.625vw;
+    background-color: #C7C7CC;
+}
+
+.currentBid div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.currentBid div:first-of-type p,
+.auctionEnd div:first-of-type p {
+    font-weight: 500;
+    color: #8E8E93;
+}
+
+.auctionEnd div:first-of-type {
+    display: flex;
+    gap: 1.4vw;
+}
+
+.auctionEnd div:first-of-type div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.mainAuctionInfoBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vw;
+}
+
+.mainAuctionInfoBottom button {
+    gap: 0.7vw;
+    width: 25vw;
+    padding: 1.4vw 0.7vw;
+    margin: 0 auto;
+    border-radius: 3.125vw;
+    background: #007AFF;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.mainAuctionInfoBottom p {
+    font-weight: 500;
+    color: #007AFF;
+    margin: 0 auto;
+}
+
+/* --- LIVE-AUCTIONS --- */
+
+.liveAuctions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sectionHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5vw;
+}
+.sectionHead h4 {
+    font-weight: 400;
+    color: #8E8E93;
+}
+
+.liveAuctionsContent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2.2vw;
+}
+
+.auctionCard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.11vw;
+    min-height: 31vw;
+}
+
+.auctionImg {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 21.66vw;
+    height: 19.44vw;
+    border-top-left-radius: 1.11vw;
+    border-top-right-radius: 1.11vw;
+}
+#softCurves {
+    background-image: url(images/3d-soft-curves.png);
+}
+#blackSquare {
+    background-image: url(images/the-mystery-of-the-black-square.png);
+}
+#pinkCloud {
+    background-image: url(images/pink-cloud.png)
+}
+#ethereum {
+    background-image: url(images/3D-ethereum.png)
+}
+
+.auctionImg button {
+    position: absolute;
+    top: 1.11vw;
+    right: 1.11vw;
+    background: rgba(255, 255, 255, 0.60);
+    box-shadow: 0 0.69vw 2.08vw 0 rgba(5, 16, 55, 0.15);
+    padding: 0.69vw 0.83vw;
+    border-radius: 2.08vw;
+    font-size: 0.97vw;
+    font-weight: 500;
+    color: #2C2C2E;
+}
+
+.auctionTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.38vw;
+    min-height: 11.52vw;
+    padding: 1.11vw 1.38vw 1.38vw;
+    border: 0.1vw solid #E6E6E6;
+    border-bottom-left-radius: 1.11vw;
+    border-bottom-right-radius: 1.11vw;
+}
+
+.auctionTxtBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.auctionAuthor {
+    display: flex;
+    align-items: center;
+    gap: 0.55vw;
+}
+.auctionAuthor img {
+    width: 1.66vw;
+    height: 1.66vw;
+}
+.auctionAuthor p {
+    color: #8E8E93; 
+}
+
+.auctionBid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.41vw;
+}
+.auctionBid p {
+    color: #8E8E93;
+}
+
+/* --- FEATURED --- */
+
+.featuredContent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2.2vw;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2.5vw;
+    margin-bottom: 3.88vw;
+}
+
+#featured-1 {
+    background-image: url(images/featured-pic1.png);
+}
+#featured-2 {
+    background-image: url(images/featured-pic2.png);
+}
+#featured-3 {
+    background-image: url(images/featured-pic3.png);
+}
+#featured-4 {
+    background-image: url(images/featured-pic4.png);
+}
+#featured-5 {
+    background-image: url(images/featured-pic5.png);
+}
+#featured-6 {
+    background-image: url(images/featured-pic6.png);
+}
+#featured-7 {
+    background-image: url(images/featured-pic7.png);
+}
+#featured-8 {
+    background-image: url(images/featured-pic8.png);
+}
+#featured-9 {
+    background-image: url(images/featured-pic9.png);
+}
+#featured-10 {
+    background-image: url(images/featured-pic10.png);
+}
+#featured-11 {
+    background-image: url(images/featured-pic11.png);
+}
+
+.loadMoreButton {
+    display: block;
+    padding: 1.11vw 4.44vw;
+    border: 0.07vw solid #AEAEB2;
+    border-radius: 3.33vw;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+/* --- TOP-CREATORS --- */
+
+.topCreatorsContent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2.2vw;
+    row-gap: 2.5vw;
+    margin-bottom: 3.88vw;
+}
+
+.topCreatorCard {
+    display: flex;
+    flex-direction: column;
+    min-height: 30vw;
+}
+
+.topCreatorImg {
+    width: 21.66vw;
+    height: 11.11vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.83vw;
+    border-top-right-radius: 0.83vw;   
+}
+.topCreator-1 {
+    background-image: url(images/top-creators-pic1.png);
+}
+.topCreator-2 {
+    background-image: url(images/top-creators-pic2.png);
+}
+.topCreator-3 {
+    background-image: url(images/top-creators-pic3.png);
+}
+.topCreator-4 {
+    background-image: url(images/top-creators-pic4.png);
+}
+
+.topCreatorInfo {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.11vw;
+    padding: 1.11vw 1.38vw 1.25vw 1.11vw;
+    border: 0.1vw solid #E5E5E5;
+}
+
+.topCreatorInfoLeft {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.topCreatorInfoLeft img {
+    width: 3.88vw;
+    height: 3.88vw;
+    border-radius: 50%;
+}
+
+.topCreatorInfoRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+.topCreatorDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 1.11vw;
+}
+
+.topCreatorTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.41vw;
+}
+
+.topCreatorDesc p {
+    max-width: 90%;
+    color: #3C3C4399;
+}
+
+.topCreatorSub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topCreatorSub button {
+    background-color: #007AFF;
+    color: #FFFFFF;
+    padding: 0.55vw 1.11vw;
+    border-radius: 2.63vw;
+}
