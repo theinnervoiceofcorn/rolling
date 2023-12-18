@@ -454,6 +454,25 @@ header button {
     font-weight: 500;
 }
 
+@media (max-width: 768px) {
+
+    .featuredContent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 2.2vw;
+        row-gap: 2.5vw;
+        margin-bottom: 3.88vw;
+    }
+
+    .featuredContent .auctionCard:nth-of-type(10),
+    .featuredContent .auctionCard:nth-of-type(11),
+    .featuredContent .auctionCard:nth-of-type(12) {
+        display: none;
+    }
+
+}
+
 /* --- TOP-CREATORS --- */
 
 .topCreatorsContent {
